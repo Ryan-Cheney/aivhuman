@@ -92,18 +92,6 @@ for index, row in df_sampled.iterrows():
 
 all_features_array = np.array(all_features)
 
-print("Feature extraction completed.")
-
-all_features_array
-
-all_features
-
-print(len(all_features[0]))
-
-all_features_array.shape
-
-import pandas as pd
-
 # Convert features to a DataFrame and save as CSV
 features_df = pd.DataFrame(all_features_array)
 features_df.to_csv("/content/all_features.csv", index=False)
